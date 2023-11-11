@@ -21,9 +21,9 @@
         $(document).ready(function() {
             try {
                 $('body').ripples({
-                    resolution: 512,
-                    dropRadius: 10, //px
-                    perturbance: 0.04,
+                    resolution: 512, // The width and height of the WebGL texture to render. The larger, the smoother the rendering and the slower the ripples will propagate.
+                    dropRadius: 10, //px //The size of the drop that results by clicking or moving the mouse over the canvas.
+                    perturbance: 0.04, //The amount of refraction caused by a ripple. 0 means there is no refraction.
                 });
             }
             catch (e) {
@@ -54,6 +54,6 @@
                 $el.ripples('drop', x, y, dropRadius, strength);
             }, 400);
         });
-        </script>
-        </body>
+    </script>
+</body>
 </html>
